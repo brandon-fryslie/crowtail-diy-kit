@@ -64,7 +64,7 @@ class AbstractTransport:
         raise NotImplementedError('Function not implemented')
 
     def writer(self, data: str):
-        self.writeln(f"file.writeline([==[{data] ==])\r")
+        self.writeln(f"file.writeline([==[{data}] ==])\r")
 
     def performcheck(self, expected: str):
         line = ''
